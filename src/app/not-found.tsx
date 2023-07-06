@@ -1,14 +1,12 @@
-import React from 'react'
-
-type Props = {
-
-}
-
-function NotFound({}: Props) {
+import Link from 'next/link'
+ 
+export default function NotFound() {
   return (
-    <div>Not Found
+    <div>
+      <h2>Invalid URL</h2>
+      <p  className='underline'>
+         <Link href="/">Click to go back to the home page</Link> 
+      </p>
     </div>
   )
 }
-
-export default NotFound
