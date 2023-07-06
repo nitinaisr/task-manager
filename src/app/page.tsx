@@ -7,16 +7,19 @@ type Props = {}
 
 const Home = (props: Props) => {
   
-  const [user, setUser] = useState<any>(checkLoginStatus());
+  const [isExpired, setIsExpired] = useState<any>(checkLoginStatus());
 
   const [router, setRouter] = useState(useRouter());
 
   useEffect(() => {
 
-    if(user){
-      router.push('/main');
-    }else{
+  console.log('isExpired',isExpired);
+
+    if(isExpired){
       router.push('/login');
+
+    }else{
+      router.push('/main');
     }
 
   });
