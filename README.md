@@ -2,8 +2,9 @@
 
 Information if it has some issues with the project
 
-if you have some issues like CORS issues
+this project use on Node.js version 18.16.1
 
+if you have some issues like CORS issues
 you can use the CORS Unblock extension at link below
 https://microsoftedge.microsoft.com/addons/detail/cors-unblock/hkjklmhkbkdhlgnnfbbcihcajofmjgbh
 
