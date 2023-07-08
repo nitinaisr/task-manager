@@ -128,6 +128,18 @@ const TaskList = ({}: Props) => {
       </SwipeAction>
     </LeadingActions>
   );
+
+  const trailingAction = (id:string) => (
+    <TrailingActions>
+      <SwipeAction onClick={() => handleDeleteTask(id)} 
+      
+      destructive={true}>
+<div className="flex items-center flex-row bg-red-500">
+    Delete
+</div>
+      </SwipeAction>
+    </TrailingActions>
+  );
   
 
 
@@ -175,7 +187,7 @@ const TaskList = ({}: Props) => {
                     <SwipeableListItem key={e.id} 
                     
                     leadingActions={leadingActions(e.id)}
-                    trailingActions={leadingActions(e.id)}
+                    trailingActions={trailingAction(e.id)}
                     >
              <Task  task={e} onDelete={handleDeleteTask} />
                     </SwipeableListItem>
