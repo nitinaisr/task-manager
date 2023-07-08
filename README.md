@@ -4,6 +4,9 @@ Information if it has some issues with the project
 
 this project use on Node.js version 18.16.1
 
+you can use  [user1,password1] and [user2,password2] to login 
+
+
 if you have some issues like CORS issues
 you can use the CORS Unblock extension at link below
 https://microsoftedge.microsoft.com/addons/detail/cors-unblock/hkjklmhkbkdhlgnnfbbcihcajofmjgbh
