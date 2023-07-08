@@ -13,7 +13,6 @@ const Home = (props: Props) => {
 
   useEffect(() => {
 
-  console.log('isExpired',isExpired);
 
     if(isExpired){
       router.push('/login');
